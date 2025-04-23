@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table Tester</title>
+</head>
+<body>
+    <main>
+        {{ lessons := getCSV "," "https://docs.google.com/spreadsheets/d/e/2PACX-1vQDLAMgQ-oA3YL-MEgPp_AVo-5XRaRMm8pTMIMOm4S6VFfJgh8EjIjFhIo28Pn1elUhkmaNcmu3gkRh/pub?output=csv" }}
+        {{ lessons }}
+    </main>
+</body>
+</html>

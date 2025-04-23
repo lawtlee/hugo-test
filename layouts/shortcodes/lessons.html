@@ -1,0 +1,31 @@
+{{/* lessons.html */}}
+{{ $url  := .Get "url" }}
+{{ $opts := dict "delimiter" "," }}
+
+{{ with resources.GetRemote $url }}
+  {{ with .Err }} 
+    <!-- HTTP or fetch error -->
+    <p style="color:red">Error fetching CSV: {{ . }}</p>
+  {{ else }}
+    {{ $rows := .Content | transform.Unmarshal $opts }}   {{/* :contentReference[oaicite:0]{index=0} */}}
+    {{ if ge (len $rows) 1 }}
+      <table>
+        <thead>
+          <tr>{{ range index $rows 0 }}<th>{{ . }}</th>{{ end }}</tr>
+        </thead>
+        <tbody>
+          {{ range $i, $row := $rows }}
+            {{ if gt $i 0 }}
+              <tr>{{ range $row }}<td>{{ . }}</td>{{ end }}</tr>
+            {{ end }}
+          {{ end }}
+        </tbody>
+      </table>
+    {{ else }}
+      <p>No data rows in <code>{{ $url }}</code>.</p>
+    {{ end }}
+  {{ end }}
+{{ else }}
+  <!-- resources.GetRemote itself failed (unlikely unless URL is malformed) -->
+  <p style="color:red">Unable to initiate request to <code>{{ $url }}</code>.</p>
+{{ end }}

@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
+    <link>https://example.org/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jul 2024 12:21:11 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lesson Table</title>
+      <link>https://example.org/posts/lesson-table/</link>
+      <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/lesson-table/</guid>
+      <description>My Lessons nameTopicKeep?learnerCategoryOSPO RelevanceaboutabstractaccessibilitySummaryurloss_roleaudienceauthorcompetencyRequiredcontributorcreativeWorkStatusdateCreateddateModifieddatePublisheddescriptioneducationalLevelhasPartidentifierinLanguageisPartOfNoteskeywordslearningResourceTypelicensementionsrecordedAtteachestimeRequiredversionworkTranslation Building CommunityCommunityKeep candidateBuilding CommunityCoreDiscover how to foster a strong and inclusive community around your open source project. This guide covers effective communication, conflict resolution, and strategies to encourage contributor engagement and collaboration.https://opensource.guide/building-community/Community Manager, GovernaceDevelopers, LeadersGitHubBuilding a healthy community helps your project thrive. Learn how to foster collaboration and inclusivity.IntermediateEnglish &amp;amp; 20 other languagesOpen Source Guidescommunity, collaboration, inclusivityGuideCC-BY-4.0These guides are available in over 20 languages. Leadership and GovernanceCommunityKeep candidateBuilding CommunityCoreThis guide outlines effective leadership and governance models for open source projects, emphasizing the importance of transparency, decision-making processes, and creating a structure that supports long-term project sustainability.</description>
+    </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>https://example.org/posts/my-first-post/</link>
       <pubDate>Fri, 26 Jul 2024 12:21:11 -0700</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>https://example.org/posts/my-first-post/</guid>
       <description>Hello Hello everyone this is my first look at hugo and how it could be used in the DSC setting.</description>
     </item>
   </channel>
